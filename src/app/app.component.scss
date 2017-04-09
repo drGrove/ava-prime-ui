@@ -1,0 +1,39 @@
+.main-nav {
+  background: #a9a9a9;
+  box-shadow: 0 0 8px #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+
+  .brand {
+    a:hover {
+      background: transparent;
+    }
+  }
+
+  &> nav {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  a {
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+
+    &:hover {
+      background: darken(#a3a3a3, 10%);
+    }
+  }
+}

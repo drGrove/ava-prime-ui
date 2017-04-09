@@ -1,0 +1,27 @@
+<h2>Settings Page</h2>
+<label for="settings.voice">Voice</label>
+<select
+  #voice
+  name="settings.voice"
+>
+  <option value="">Select a voice</option>
+  <option
+    *ngFor="let voice of voices"
+    [value]="voice.name"
+  >
+    {{voice.name}}
+  </option>
+</select>
+<br />
+<label
+  for="settings.phrase"
+>
+  Phrase
+</label>
+<input
+  type="text"
+  #phrase
+  placeholder="What would you like me to say?"
+/>
+<br />
+<button type="button" (click)="say(phrase.value, voice.value)">Say</button>
